@@ -6,26 +6,8 @@ class Tabs extends Component {
     }
     render() {
         return (
-          <div className="tabs">
-                {React.Children.map(this.props.children, (child, i) => {
-                    let className=`Tabs__button`;
-                    if (child.key === this.props.active) {
-                        className = `${className} Tabs__button--active`;
-                    }
-                    return (
-                     <div className="Tabs__button"
-                     onClick={() => {
-                         this.props.onChange(child.key);
-                     }}
-                     >
-                        {child}
-
-                    </div>
-                    );
-                })}
-             <div
-              className="Tabs__select"
-             />
+            <div className="App">
+            <h1>React Tabs</h1>
             </div>
         );
       }
